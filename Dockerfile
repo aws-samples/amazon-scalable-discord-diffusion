@@ -3,7 +3,7 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y wget git && apt-get clean
 
-RUN git clone https://github.com/Sygil-Dev/nataili.git .
+RUN git clone https://github.com/db0/nataili.git .
 # Check out a specific version of the above repository
 RUN git checkout 6c2f1862bacf25b6bc74e95e3174ca45a116f85b 
 RUN echo "boto3>=1.21.32">>requirements.txt
